@@ -10,19 +10,19 @@
           charset="utf-8">
   </head>
   <body class="page">
-    <div class="aaa header">
+    <div class="header">
       <img class="header__img" src="./eisenhower-matrix.jpg">
       <a class="more_inf header__link" 
          href="https://goal-life.com/page/method/matrix-eisenhower">
          Want more details?
       </a>
     </div>
-    <div class="centered-main-page-element main">
+    <div class="main">
       <p class="add-item">
-        <label for="add-item__input" class="section__header add-item__label">Add Item</label>
-        <div class="task-row-wrapper add-item__wrapper">
+        <label for="add-item__input" class="label-elem section__header add-item__label">Add Item</label>
+        <div class="add-item__wrapper">
           <input id="add-item__input"
-                 class="task input add-item__input" 
+                 class="input input_text add-item__input todo__task" 
                  type="text">
           <button class="button add-item__button">Add</button>
         </div>
@@ -31,38 +31,38 @@
       <ul id="uncompleted-tasks" class="todo">
         <li class="todo__item">
           <input class="input todo__checkbox" type="checkbox">
-          <label class="task todo__task">Pay Bills</label>
-          <input class="input todo__input" type="text">
-          <button class="edit button todo__button">Edit</button>
-          <button class="delete button todo__button">
-            <img src="./remove.svg">
+          <label class="label-elem todo__label todo__task task">Pay Bills</label>
+          <input class="input input_text todo__input" type="text">
+          <button class="button todo__button todo__button_edit">Edit</button>
+          <button class="button todo__button todo__button_delete">
+            <img class="button__icon_delete" src="./remove.svg">
           </button>
         </li>
-        <li class="editMode todo__item">
+        <li class="todo__item todo__item_edit">
           <input class="input todo__checkbox" type="checkbox">
-          <label class="task todo__task">Go Shopping</label>
+          <label class="label-elem todo__label todo__task task">Go Shopping</label>
           <input type="text" 
                  value="Go Shopping" 
-                 class="task input todo__input">
-          <button class="edit button todo__button">Save</button>
-          <button class="delete button todo__button">
-            <img src="./remove.svg">
+                 class="input input_text todo__input todo__task task">
+          <button class="button todo__button todo__button_edit">Save</button>
+          <button class="button todo__button todo__button_delete">
+            <img class="button__icon_delete" src="./remove.svg">
           </button>
         </li>
       </ul>
       <h3 class="section__header">Completed</h3>
       <ul id="completed-tasks" class="todo">
-        <li class="todo__item">
+        <li class="todo__item todo__item_compl">
           <input class="input todo__checkbox" type="checkbox" checked>
-          <label class="task todo__task">See the Doctor</label>
-          <input type="text" class="task input todo__input">
-          <button class="edit button todo__button">Edit</button>
-          <button class="delete button todo__button">
-            <img src="./remove.svg">
+          <label class="label-elem todo__label todo__task task">See the Doctor</label>
+          <input type="text" class="input input_text todo__input todo__task task">
+          <button class="button todo__button todo__button_edit">Edit</button>
+          <button class="button todo__button todo__button_delete">
+            <img class="button__icon_delete" src="./remove.svg">
           </button>
         </li>
       </ul>
     </div>
-    <script SRC="app.js"></script>
+   <script SRC="app.js"></script>
   </body>
 </html>
