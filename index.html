@@ -10,15 +10,15 @@
           charset="utf-8">
   </head>
   <body class="page">
-    <div class="header">
+    <header class="header">
       <img class="header__img" src="./eisenhower-matrix.jpg">
       <a class="more_inf header__link" 
          href="https://goal-life.com/page/method/matrix-eisenhower">
          Want more details?
       </a>
-    </div>
-    <div class="main">
-      <p class="add-item">
+    </header>
+    <main class="main">
+      <section class="add-item">
         <label for="add-item__input" class="label-elem section__header add-item__label">Add Item</label>
         <div class="add-item__wrapper">
           <input id="add-item__input"
@@ -26,43 +26,47 @@
                  type="text">
           <button class="button add-item__button">Add</button>
         </div>
-      </p>
-      <h3 class="section__header">Todo</h3>
-      <ul id="uncompleted-tasks" class="todo">
-        <li class="todo__item">
-          <input class="input todo__checkbox" type="checkbox">
-          <label class="label-elem todo__label todo__task">Pay Bills</label>
-          <input class="input input_text todo__input" type="text">
-          <button class="button todo__button todo__button_edit">Edit</button>
-          <button class="button todo__button todo__button_delete">
-            <img class="button__icon_delete" src="./remove.svg">
-          </button>
-        </li>
-        <li class="todo__item todo__item_edit">
-          <input class="input todo__checkbox" type="checkbox">
-          <label class="label-elem todo__label todo__task">Go Shopping</label>
-          <input type="text" 
-                 value="Go Shopping" 
-                 class="input input_text todo__input todo__task">
-          <button class="button todo__button todo__button_edit">Save</button>
-          <button class="button todo__button todo__button_delete">
-            <img class="button__icon_delete" src="./remove.svg">
-          </button>
-        </li>
-      </ul>
-      <h3 class="section__header">Completed</h3>
-      <ul id="completed-tasks" class="todo">
-        <li class="todo__item todo__item_compl">
-          <input class="input todo__checkbox" type="checkbox" checked>
-          <label class="label-elem todo__label todo__task">See the Doctor</label>
-          <input type="text" class="input input_text todo__input todo__task">
-          <button class="button todo__button todo__button_edit">Edit</button>
-          <button class="button todo__button todo__button_delete">
-            <img class="button__icon_delete" src="./remove.svg">
-          </button>
-        </li>
-      </ul>
-    </div>
+      </section>
+      <section class="uncompleted-tasks">
+        <h3 class="section__header">Todo</h3>
+        <ul id="uncompleted-tasks" class="todo">
+          <li class="todo__item">
+            <input class="input todo__checkbox" type="checkbox">
+            <label class="label-elem todo__label todo__task">Pay Bills</label>
+            <input class="input input_text todo__input" type="text">
+            <button class="button todo__button todo__button_edit">Edit</button>
+            <button class="button todo__button todo__button_delete">
+              <img class="button__icon_delete" src="./remove.svg">
+            </button>
+          </li>
+          <li class="todo__item todo__item_edit">
+            <input class="input todo__checkbox" type="checkbox">
+            <label class="label-elem todo__label todo__task">Go Shopping</label>
+            <input type="text" 
+                  value="Go Shopping" 
+                  class="input input_text todo__input todo__task">
+            <button class="button todo__button todo__button_edit">Save</button>
+            <button class="button todo__button todo__button_delete">
+              <img class="button__icon_delete" src="./remove.svg">
+            </button>
+          </li>
+        </ul>
+      </section>
+      <section class="completed-tasks">
+        <h3 class="section__header">Completed</h3>
+        <ul id="completed-tasks" class="todo">
+          <li class="todo__item todo__item_compl">
+            <input class="input todo__checkbox" type="checkbox" checked>
+            <label class="label-elem todo__label todo__task">See the Doctor</label>
+            <input type="text" class="input input_text todo__input todo__task">
+            <button class="button todo__button todo__button_edit">Edit</button>
+            <button class="button todo__button todo__button_delete">
+              <img class="button__icon_delete" src="./remove.svg">
+            </button>
+          </li>
+        </ul>
+      </section>
+    </main>
    <script SRC="app.js"></script>
   </body>
 </html>
